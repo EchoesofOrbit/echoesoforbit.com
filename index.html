@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echoes of Orbit</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: radial-gradient(ellipse at bottom, #0d0d0d 0%, #000000 100%);
+      background-size: cover;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent url('https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/assets/stars.png') repeat top center;
+      animation: moveStars 200s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 0 10000px; }
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 90%;
+      padding: 20px;
+    }
+
+    .logo {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="content">
+    <img src="https://raw.githubusercontent.com/EchoesofOrbit/echoesoforbitphotos/refs/heads/main/EOOLogoBackground.png" alt="Echoes of Orbit Logo" class="logo" />
+    <h1>Welcome to Echoes of Orbit</h1>
+    <p>
+      Art inspired by the silent stories of space.<br>
+      Coming soon — or not. We'll see where gravity takes us.
+    </p>
+  </div>
+</body>
+</html>
